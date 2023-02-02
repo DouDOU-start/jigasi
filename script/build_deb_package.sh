@@ -34,9 +34,10 @@ echo "Full version: ${VERSION_FULL}"
 VERSION=${VERSION_FULL:1}
 echo "Package version: ${VERSION}"
 
+# DouDOU_d 暂时注释
 REV=$(git log --pretty=format:'%h' -n 1)
-dch -v "$VERSION-1" "Build from git. $REV"
-dch -D unstable -r ""
+# dch -v "$VERSION-1" "Build from git. $REV"
+# dch -D unstable -r ""
 
 # We need to make sure all dependencies are downloaded before start building
 # the debian package

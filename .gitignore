@@ -9,3 +9,5 @@ jigasi-home/
 jigasi.iml
 
 target
+
+*.versionsBackup
